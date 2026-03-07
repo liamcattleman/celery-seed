@@ -275,31 +275,61 @@ footer a:hover, a:active {
 	text-decoration: underline;
 }
 
-/* -- Code for the Cookie Compliance popover window -- */
+/* Sub-footer */
+.subfooter {
+	text-align: center;
+	font-size: 14px;
+	color: #888;
+	padding: 8px 0 16px;
+}
 
+.subfooter a:link, .subfooter a:visited {
+	color: #427ac1;
+}
+
+.subfooter a:hover, .subfooter a:active {
+	text-decoration: underline;
+}
+
+/* Recipe list styles */
+.recipe-list {
+	text-align: left;
+	display: inline-block;
+	margin: 0 auto 20px;
+	padding-left: 24px;
+}
+
+.recipe-list li {
+	margin-bottom: 8px;
+}
+
+/* -- Code for the Cookie Compliance popover window -- */
 #cookiePopup {
   background-color: #ffffff;
-  position: absolute;
+  position: fixed;
   left: 5%;
-  bottom: 0;
+  bottom: 20px;
   font-size: 14px;
   width: 90%;
   box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Murecho', sans-serif;
   text-align: justify;
   line-height: 1.8em;
   margin: 0 auto;
   padding: 2em 1.4em;
   border-radius: 6px;
   transition: all 0.5s ease-in-out;
+  z-index: 999;
 }
 
 #cookiePopup p {
   text-align: center;
   margin: 1.4em 0;
+  color: #666;
 }
+
 #cookiePopup button {
-  background-color: #6859fe;
+  background-color: #427ac1;
   border: none;
   color: #ffffff;
   font-size: 1.2em;
@@ -308,20 +338,24 @@ footer a:hover, a:active {
   position: relative;
   margin: auto;
   border-radius: 5px;
+  cursor: pointer;
 }
+
+#cookiePopup button:hover {
+  background-color: #557763;
+}
+
 #cookiePopup a {
-  color: #6859fe;
+  color: #427ac1;
 }
 
 .hide {
   visibility: hidden;
-  
-}
-.show {
-  visibility: visible;
- 
 }
 
+.show {
+  visibility: visible;
+}
 /* -- End of Code for the Cookie Compliance popover window -- */
 
 @media only screen and  (min-width:900px) {
